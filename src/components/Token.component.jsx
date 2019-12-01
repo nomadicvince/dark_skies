@@ -1,0 +1,3 @@
+const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX;
+
+export default MAPBOX_ACCESS_TOKEN;

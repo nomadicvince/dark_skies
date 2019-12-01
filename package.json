@@ -1,0 +1,40 @@
+{
+  "name": "darkskies",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "deck.gl": "^7.3.3",
+    "dotenv": "^8.2.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-map-gl": "^5.1.1",
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "![World Spaceports](https://images.ctfassets.net/nb888uixfxem/4BvggLXhjqKB1UjsXjiQQX/45013dca2bb58a74a5ba85b814bced08/Screenshot_at_2019-11-17_19-28-06.jpg)",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
