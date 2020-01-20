@@ -10,6 +10,8 @@ import {ScatterplotLayer} from '@deck.gl/layers';
 import {StaticMap} from 'react-map-gl';
   
 class Map extends React.Component {
+  
+
     _renderTooltip() {
       const {hoveredObject, pointerX, pointerY} = this.state || {};
       return hoveredObject && (
@@ -22,6 +24,8 @@ class Map extends React.Component {
         </div>
       );
     }
+
+     
 
     _Welcome() {
       return (
@@ -41,7 +45,9 @@ class Map extends React.Component {
           getPosition: d => d.position,
           radiusMinPixels: 0.25,
           getRadius: d => d.radius,
-          getFillColor: d => [255, 2, 0],
+          getFillColor: d => d.type === "Community" ? [255, 0, 0] : [138, 239, 241] &&
+          d.type === "Park" ? [0, 255, 0] : [138, 239, 241] && d.type === "Reserve" ? [255, 98, 0] : [138, 239, 241] && d.type === "Sanctuary" ? [255, 255, 0] : [138, 239, 241] && d.type === "Festival" ? [255, 0, 255] : [138, 239, 241],
+          getLineColor: [224, 255, 0],
           pickable: true,
           onHover: info => this.setState({
             hoveredObject: info.object,
